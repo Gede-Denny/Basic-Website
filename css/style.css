@@ -1,0 +1,98 @@
+/* Menghilangkan margin bawaan browser dan mengatur font dasar */
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Inter";
+}
+
+/* Mengatur kontainer agar teks dan gambar berjejer ke samping */
+.hero_container {
+    display: flex; 
+    justify-content: space-between; /* Membuat teks di kiri, gambar di kanan */
+    align-items: center; /* Menyejajarkan teks dan gambar secara vertikal di tengah */
+    padding: 80px; /* Memberikan jarak dari tepi layar */
+    max-width: 1600px; /* Membatasi lebar maksimal agar tidak terlalu melar di layar lebar */
+    margin: 0 auto; /* Membuat kontainer berada di tengah halaman */
+}
+
+/* Mengatur porsi lebar untuk teks */
+.hero_text {
+    color: antiquewhite;
+    flex: 1;
+}
+
+.hero_text h1{
+    font-size: 50px;
+    font-weight: 750;
+    line-height: 0.7;
+}
+.hero_text p{
+    font-size: 20px;
+    line-height: 0.5;
+}
+
+.hero_image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; /* Memastikan gambar benar-benar mepet ke kanan kontainer */
+}
+
+/* Mengatur ukuran gambar agar responsif dan tidak merusak layout */
+.hero_image img{
+    max-width: 90%; /* Gambar tidak akan melebihi lebar kontainernya */
+    height: auto; /* Menjaga proporsi rasio gambar */
+}
+
+/* Navbar style */
+.navbar {
+    width: 100%;
+}
+
+.nav_container {
+    display: flex;
+    justify-content: space-between; /* Memisah logo di kiri dan menu di kanan */
+    align-items: center;
+    padding: 10px 80px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* logo style */
+.logo {
+    flex-basis: 1000px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo img{
+    max-width: 25%; /* Gambar tidak akan melebihi lebar kontainernya */
+    height: auto; /* Menjaga proporsi rasio gambar */
+}
+
+/* list menu style */
+.nav_link {
+    display: flex;
+    list-style: none; /* Menghilangkan bullet points bawaan HTML */
+    gap: 50px; /* Memberikan jarak antar menu teks */
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav_link a{
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav_link a:hover{
+    color: white;
+}
+
+.section1 {
+    background-color: rgb(163, 10, 10);
+}
