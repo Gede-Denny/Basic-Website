@@ -1,3 +1,10 @@
+/*============================================*/
+/*Section 1*/
+/*============================================*/
+.section1 {
+    background-color: rgb(163, 10, 10);
+}
+
 /* Menghilangkan margin bawaan browser dan mengatur font dasar */
 body {
     margin: 0px;
@@ -22,13 +29,13 @@ body {
 }
 
 .hero_text h1{
-    font-size: 50px;
-    font-weight: 750;
-    line-height: 0.7;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 1.1;
 }
 .hero_text p{
     font-size: 20px;
-    line-height: 0.5;
+    line-height: 1.4;
 }
 
 .hero_image {
@@ -93,6 +100,190 @@ body {
     color: white;
 }
 
-.section1 {
-    background-color: rgb(163, 10, 10);
+/*============================================*/
+/*Section 2*/
+/*============================================*/
+.section2 {
+    background-color: rgb(245, 216, 178);
+}
+
+.history_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.history_text {
+    color: black;
+    flex: 1;
+}
+
+.history_text h1{
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.history_text p{
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.history_image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.history_image img{
+    max-width: 90%;
+    height: auto;
+    border-radius: 20px;
+}
+
+/*============================================*/
+/*Section 3*/
+/*============================================*/
+.section3 {
+    background-color: rgb(245, 216, 178);
+}
+
+.food_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    max-width: 1600px;
+    margin: 0 auto;
+    gap: 40px; /* Memberikan jarak horizontal antara area teks dan gambar */
+}
+
+.text_button_food {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Memastikan tombol rata kiri mengikuti teks */
+}
+
+.food_text {
+    color: black;
+    margin-bottom: 30px;
+}
+
+.food_text h1{
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.food_text p{
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.food_button {
+    background-color: rgb(163, 10, 10); /* Warna merah tua khas FastBite */
+    color: rgb(245, 216, 178); /* Warna teks putih agak coklat */
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 600;
+    padding: 14px 40px; /* Jarak atas-bawah 14px, kiri-kanan 40px */
+    border: none; /* Menghilangkan border bawaan browser */
+    border-radius: 12px; /* Membuat sudut tombol melengkung halus */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.food_button:hover {
+    background-color: rgb(143, 8, 8);
+}
+
+.food_image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.food_image img{
+    max-width: 90%;
+    height: auto;
+    border-radius: 20px;
+}
+
+/*============================================*/
+/*Section 3*/
+/*============================================*/
+.section4 {
+    background-color: rgb(245, 216, 178);
+}
+
+.drink_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    max-width: 1600px;
+    margin: 0 auto;
+    gap: 40px; /* Memberikan jarak horizontal antara area teks dan gambar */
+}
+
+.text_button_drink {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Memastikan tombol rata kiri mengikuti teks */
+}
+
+.drink_text {
+    color: black;
+    margin-bottom: 30px;
+}
+
+.drink_text h1{
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.drink_text p{
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.drink_button {
+    background-color: rgb(163, 10, 10); /* Warna merah tua khas FastBite */
+    color: rgb(245, 216, 178); /* Warna teks putih agak coklat */
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 600;
+    padding: 14px 40px; /* Jarak atas-bawah 14px, kiri-kanan 40px */
+    border: none; /* Menghilangkan border bawaan browser */
+    border-radius: 12px; /* Membuat sudut tombol melengkung halus */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.drink_button:hover {
+    background-color: rgb(143, 8, 8);
+}
+
+.drink_image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.drink_image img{
+    max-width: 90%;
+    height: auto;
+    border-radius: 20px;
 }
