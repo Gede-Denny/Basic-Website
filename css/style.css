@@ -5,15 +5,13 @@
     background-color: rgb(163, 10, 10);
 }
 
-/* Menghilangkan margin bawaan browser dan mengatur font dasar */
-body {
+body { /* Menghilangkan margin bawaan browser dan mengatur font dasar */
     margin: 0px;
     padding: 0px;
     font-family: "Inter";
 }
 
-/* Mengatur kontainer agar teks dan gambar berjejer ke samping */
-.hero_container {
+.hero_container { /* Mengatur kontainer agar teks dan gambar berjejer ke samping */
     display: flex; 
     justify-content: space-between; /* Membuat teks di kiri, gambar di kanan */
     align-items: center; /* Menyejajarkan teks dan gambar secara vertikal di tengah */
@@ -22,8 +20,7 @@ body {
     margin: 0 auto; /* Membuat kontainer berada di tengah halaman */
 }
 
-/* Mengatur porsi lebar untuk teks */
-.hero_text {
+.hero_text { /* Mengatur porsi lebar untuk teks */
     color: antiquewhite;
     flex: 1;
 }
@@ -44,14 +41,12 @@ body {
     justify-content: flex-end; /* Memastikan gambar benar-benar mepet ke kanan kontainer */
 }
 
-/* Mengatur ukuran gambar agar responsif dan tidak merusak layout */
-.hero_image img{
+.hero_image img{ /* Mengatur ukuran gambar agar responsif dan tidak merusak layout */
     max-width: 90%; /* Gambar tidak akan melebihi lebar kontainernya */
     height: auto; /* Menjaga proporsi rasio gambar */
 }
 
-/* Navbar style */
-.navbar {
+.navbar { /* Navbar style */
     width: 100%;
 }
 
@@ -64,8 +59,7 @@ body {
     margin: 0 auto;
 }
 
-/* logo style */
-.logo {
+.logo { /* logo style */
     flex-basis: 1000px;
     display: flex;
     justify-content: flex-start;
@@ -76,8 +70,7 @@ body {
     height: auto; /* Menjaga proporsi rasio gambar */
 }
 
-/* list menu style */
-.nav_link {
+.nav_link { /* list menu style */
     display: flex;
     list-style: none; /* Menghilangkan bullet points bawaan HTML */
     gap: 50px; /* Memberikan jarak antar menu teks */
@@ -204,6 +197,10 @@ body {
     background-color: rgb(143, 8, 8);
 }
 
+.food_button:active {
+    transform: scale(0.96);
+}
+
 .food_image {
     flex: 1;
     display: flex;
@@ -217,7 +214,7 @@ body {
 }
 
 /*============================================*/
-/*Section 3*/
+/*Section 4*/
 /*============================================*/
 .section4 {
     background-color: rgb(245, 216, 178);
@@ -276,6 +273,10 @@ body {
     background-color: rgb(143, 8, 8);
 }
 
+.drink_button:active {
+    transform: scale(0.96);
+}
+
 .drink_image {
     flex: 1;
     display: flex;
@@ -286,4 +287,175 @@ body {
     max-width: 90%;
     height: auto;
     border-radius: 20px;
+}
+
+/*============================================*/
+/*Section 5*/
+/*============================================*/
+
+.section5 {
+    background-color: rgb(245, 216, 178);
+    padding: 60px 80px; /* Memberikan jarak atas-bawah 60px, kiri-kanan 80px agar sejajar dengan navbar */
+}
+
+.best_menu_container {
+    max-width: 1600px;
+    margin: 0 auto; /* Memastikan kontainer tetap berada di tengah layar */
+}
+
+.best_menu { /* Mengatur jarak antar kelompok (Food & Drink) */
+    margin-bottom: 70px; /* Memberikan spasi yang cukup antara block Food dan block Drink */
+}
+
+.best_menu_tittle {
+    font-size: 40px;
+    font-weight: 800;
+    color: black;
+    margin-bottom: 30px; /* Jarak antara judul dan deretan kartu di bawahnya */
+}
+
+.product_grid { /* Sistem Grid untuk 4 Kolom Kartu */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* repeat(4, 1fr) artinya membagi ruang menjadi 4 kolom yang lebarnya sama rata otomatis */
+    gap: 25px; /* Jarak horizontal dan vertikal antar kartu produk */
+}
+
+.product_card { /* Pengaturan Elemen di Dalam Kartu Produk */
+    display: flex;
+    flex-direction: column; /* Menyusun konten kartu (Gambar, Judul, Footer) dari atas ke bawah */
+}
+
+.product_image { /* Styling Gambar Produk */
+    width: 100%; /* Memaksa gambar mengikuti lebar kartu */
+    height: auto; /* Menjaga proporsi asli gambar */
+    border-radius: 20px; /* Membuat sudut gambar melengkung halus sesuai desain */
+    object-fit: cover;
+}
+
+.product_name {
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 8px;
+}
+
+.product_footer { /* Menata Baris Paling Bawah (Harga & Tombol) */
+    display: flex;
+    justify-content: space-between; /* Mendorong harga ke ujung kiri, tombol ke ujung kanan */
+    align-items: center; /* Menyejajarkan posisi vertikal harga dan tombol di tengah */
+    margin-top: auto; /* TRICK: Memaksa baris footer selalu konsisten di paling bawah kartu */
+}
+
+.product_price {
+    font-size: 16px;
+    color: black;
+}
+
+.product_price strong{
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.action_button { /* Jarak antara Tombol Cart dan Tombol Buy Now */
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.button_cart { /* Styling Tombol Keranjang (Menggunakan Boxicons) */
+    background-color: rgb(163, 10, 10); /* Merah khas FastBite */
+    color: rgb(245, 216, 178); /* Warna krem icon */
+    border: none;
+    border-radius: 8px; /* Sudut melengkung halus */
+    width: 38px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 22px; /* Mengatur ukuran icon Boxicons */
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.button_buy { /* Styling Tombol Buy Now */
+    background-color: rgb(163, 10, 10);
+    color: rgb(245, 216, 178);
+    font-family: "Inter";
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0 20px; /* Jarak teks ke tepi kiri dan kanan tombol */
+    height: 38px; /* Menyamakan tinggi dengan button_cart agar simetris */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.button_cart:hover, .button_buy:hover { /* Efek Hover & Active agar tombol terasa interaktif saat disentuh */
+    background-color: rgb(143, 8, 8); /* Merah sedikit lebih gelap */
+}
+
+.button_cart:active, .button_buy:active {
+    transform: scale(0.96); /* Efek sedikit mengecil seperti ditekan */
+}
+
+/*============================================*/
+/*Section 6*/
+/*============================================*/
+
+.section6 {
+    background-color: rgb(245, 216, 178);
+    padding: 80px;
+}
+
+.review_container {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 270px;
+}
+
+.review_image {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 650px;
+    height:  auto;
+}
+
+.review_image_top {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.review_image_bottom {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.review_text {
+    flex: 1;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.review_text h1{
+    font-size: 55px;
+    font-weight: 700;
+    color: black;
+    line-height: 1.1;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.review_text p{
+    font-size: 20px;
+    line-height: 1.4;
+    color: black;
+    margin: 0;
 }
